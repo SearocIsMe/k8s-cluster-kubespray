@@ -218,7 +218,7 @@ podsecuritypolicy_enabled: false
 ## Set this variable to true to get rid of this issue
 volume_cross_zone_attachment: false
 # Add Persistent Volumes Storage Class for corresponding cloud provider ( OpenStack is only supported now )
-persistent_volumes_enabled: false
+persistent_volumes_enabled: true
 
 ## Container Engine Acceleration
 ## Enable container acceleration feature, for example use gpu acceleration in containers
