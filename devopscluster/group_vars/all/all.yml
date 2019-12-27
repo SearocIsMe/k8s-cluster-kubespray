@@ -42,9 +42,9 @@ loadbalancer_apiserver_healthcheck_port: 8081
 # kubelet_load_modules: false
 
 ## Upstream dns servers
-# upstream_dns_servers:
-#   - 8.8.8.8
-#   - 8.8.4.4
+upstream_dns_servers:
+  - 8.8.8.8
+  - 8.8.4.4
 
 ## There are some changes specific to the cloud providers
 ## for instance we need to encapsulate packets with some network plugins
@@ -75,13 +75,13 @@ loadbalancer_apiserver_healthcheck_port: 8081
 ## Chose 'none' if you provide your own certificates.
 ## Option is  "script", "none"
 ## note: vault is removed
-# cert_management: script
+cert_management: script
 
 ## Set to true to allow pre-checks to fail and continue deployment
 # ignore_assert_errors: false
 
 ## The read-only port for the Kubelet to serve on with no authentication/authorization. Uncomment to enable.
-# kube_read_only_port: 10255
+kube_read_only_port: 10255
 
 ## Set true to download and cache container
 # download_container: true
