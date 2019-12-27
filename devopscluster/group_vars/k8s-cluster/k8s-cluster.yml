@@ -183,7 +183,7 @@ dynamic_kubelet_configuration_dir: "{{ kubelet_config_dir | default(default_kube
 
 # pod security policy (RBAC must be enabled either by having 'RBAC' in authorization_modes or kubeadm enabled)
 podsecuritypolicy_enabled: true
-authorization_modes: ['Node', 'RBAC']
+authorization_modes: ['RBAC']
 
 # Make a copy of kubeconfig on the host that runs Ansible in {{ inventory_dir }}/artifacts
 kubeconfig_localhost: true
